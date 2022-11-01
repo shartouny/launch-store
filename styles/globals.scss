@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fit-content {
+    width: fit-content;
+}
+
+.h-100-vh{
+    height: 100vh;
+}
+
+.center-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0070f3;
+}
+
+.slide-down {
+    animation: .7s slide-down;
+}
+/* width */
+.photo-picker-scroll-bar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+button {
+    cursor:pointer;
+}
+
+/* Track */
+.photo-picker-scroll-bar::-webkit-scrollbar-track {
+    background:lightgrey;
+    border-radius: 5px;
+    width: 8px;
+    height: 8px;
+}
+
+/* Handle */
+.photo-picker-scroll-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+
+}
+
+/* Handle on hover */
+.photo-picker-scroll-bar::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: darkgray;
+}
+
+.tooltip {
+    @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+.bg-colorE5E5E5{
+    background-color: #FAFAFA
+} 
+ 
+// Animation
+@keyframes slide-down {
+    0% {
+        @apply -top-52 opacity-0;
+    }
+    100% {
+        @apply top-0 opacity-100;
+    }
+}
+
+
+ 

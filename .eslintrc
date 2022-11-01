@@ -1,0 +1,94 @@
+{
+  "extends": [
+    "next",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "simple-import-sort",
+    "import",
+    "react",
+    "tailwindcss",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "code": 200,
+        "semi": false,
+        "tabWidth": 2,
+        "printWidth": 1000,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "trailingComma": "none",
+        "bracketSameLine": true,
+        "endOfLine": "auto",
+        "arrowParens": "always",
+        "multiline": false,
+        "minItems": 2,
+        "jsxBracketSameLine": true
+      },
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "@next/next/no-img-element": "off",
+    "no-console": "error",
+    "jsx-a11y/alt-text": [
+      2,
+      {
+        "elements": [
+          "img",
+          "object",
+          "area",
+          "input[type=\"image\"]"
+        ],
+        "img": [
+          "Image"
+        ],
+        "object": [
+          "Object"
+        ],
+        "area": [
+          "Area"
+        ],
+        "input[type=\"image\"]": [
+          "InputImage"
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "react-hooks/rules-of-hooks": [
+      "warn",
+      "never"
+    ],
+    "react-hooks/exhaustive-deps": "error",
+    "simple-import-sort/imports": "error",
+    "import/newline-after-import": "error",
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-contradicting-classname": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "object": true
+        }
+      }
+    ],
+    //    "react/jsx-closing-bracket-location": [
+    //      1,
+    //      {
+    //        "selfClosing": "line-aligned"
+    //      }
+    //    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "after-used"
+      }
+    ]
+  }
+}

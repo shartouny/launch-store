@@ -1,0 +1,5 @@
+/* register color picker */
+.hue-horizontal{border-radius: 25px!important;}
+.hue-picker{width: 100%!important;}
+.alpha-picker{width: 100%!important;}
+.alpha-picker>div>div{border-radius: 25px!important;}
